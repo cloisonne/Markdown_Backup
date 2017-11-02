@@ -1,4 +1,4 @@
----
+﻿---
 title: 博客搭建过程和工具总结
 date: 2016-07-18 21:42:13
 categories:
@@ -59,7 +59,7 @@ top: 1
 
 ### 补充-关于nodejs的安装
 
-> 官网直接下载完整包 [Node.js](https://nodejs.org/en/)
+官网直接下载完整包 [Node.js](https://nodejs.org/en/)
 
 ``` bash
 cd node-v-linux-x64/bin
@@ -67,20 +67,27 @@ ls
 ./node -v
 ```
 
-> 设置全局：
+设置全局：
 
 ``` bash
 ln -s /home/node-v-linux-x64/bin/node /usr/local/bin/node
 ln -s /home/node-v-linux-x64/bin/npm /usr/local/bin/npm
 ```
 
-> 后面安装的hexo目录位于nodejs/bin 也需要设置全局
+后面安装的hexo目录位于nodejs/bin 也需要设置全局
 
 ```bash
 sudo ln -s /opt/node-v4.4.7-linux-x64/bin/hexo /usr/local/bin/hexo
 ```
 
 -----
+
+### 补充-Windows下nodejs的问题
+
+国内npm被墙 采用淘宝镜像[cnpm][1]
+
+    $ npm install -g cnpm --registry=https://registry.npm.taobao.org
+
 
 ### 补充-关于私钥公钥的生成
 
@@ -144,9 +151,16 @@ npm install hexo-generator-baidu-sitemap --save
 
 ```
 
+**置顶插件**
+
+        $ npm uninstall hexo-generator-index --save
+    $ npm install hexo-generator-index-pin-top --save
+
+
+
 第三方插件，主要有：
 
- - 多说评论
+ ~~- 多说评论~~
  - 百度统计
  - 不蒜子统计
  - sitemap
@@ -233,10 +247,11 @@ $:/plugins/tiddlywiki/markdown
 1. **Next主题**: <http://theme-next.iissnan.com>
 1. **Yelee主题**: <http://moxfive.coding.me/yelee>
 1. **favicon制作**: <http://www.atool.org/ico.php>
+2. **淘宝npm镜像**： <https://npm.taobao.org/>
 
 ### 网站维护
 
-1. **多说评论系统**: <http://duoshuo.com/>
+1. ~~多说评论系统: <http://duoshuo.com/>~~
 1. **DNSPod**: <https://www.dnspod.cn>
 1. **TK域名注册**: <http://www.dot.tk/zh/index.html?lang=zh>
 1. **域名管理freenom**: <https://my.freenom.com/clientarea.php>
@@ -247,3 +262,6 @@ $:/plugins/tiddlywiki/markdown
 1. **小书匠Markdown编辑器**: <http://markdown.xiaoshujiang.com/>
 1. **简书**: <http://www.jianshu.com>
 1. **TiddlyWiki**: <http://tiddlywiki.com/>
+
+
+  [1]: https://npm.taobao.org/
