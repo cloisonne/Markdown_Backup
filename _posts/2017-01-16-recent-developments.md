@@ -5,6 +5,7 @@ categories:
 tags:
   - null
 permalink: recent-developments
+abbrlink: 64516
 date: 2017-02-12 16:29:30
 ---
 

@@ -7,6 +7,7 @@ tags:
   - MachineLearning
   - XGBoost
 permalink: kaggle-titanic
+abbrlink: 32063
 date: 2017-12-15 22:28:52
 ---
 

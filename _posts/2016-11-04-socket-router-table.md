@@ -6,6 +6,7 @@ tags:
   - Linux
   - Socket
 permalink: socket-router-table
+abbrlink: 33500
 date: 2016-11-04 22:29:08
 ---
 
@@ -16,7 +17,7 @@ date: 2016-11-04 22:29:08
 
 ---------------
 
-[太长不看，直接看代码的传送门](/2016/11/04/socket-router-table/#路由表MAC转发代码分析)
+[太长不看，直接看代码的传送门](/posts/33500/#路由表MAC转发代码分析)
 
 ### 一些基础知识
 

@@ -5,8 +5,9 @@ categories:
 tags:
   - Ubuntu
   - VPN
-date: 2016-07-23 21:20:38
 permalink: Ubuntu-VPN-problems
+abbrlink: 40055
+date: 2016-07-23 21:20:38
 ---
 
 <h2 id="intro">前言</h2>因为需要访问`GNU Radio`，需要翻墙，很自然的想到在Ubuntu16.04里使用VPN。

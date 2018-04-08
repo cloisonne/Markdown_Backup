@@ -5,6 +5,7 @@ categories:
 tags:
   - Ubuntu
 permalink: ubuntu-login-error
+abbrlink: 40658
 date: 2016-10-26 20:25:40
 ---
 

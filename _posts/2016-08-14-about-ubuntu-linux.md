@@ -4,10 +4,11 @@ categories:
   - Notes
 tags:
   - Ubuntu
-  - linux
+  - Linux
   - Gnome3
-date: 2016-08-14 17:10:54
 permalink: about-Ubuntu-linux
+abbrlink: 61830
+date: 2016-08-14 17:10:54
 ---
 
 <h2 id="intro">前言</h2>记录自己在Ubuntu系统学习和建设中遇到的问题和解决方案，一些小tip选择加入[TiddlyWiki](/wiki)
@@ -16,6 +17,75 @@ permalink: about-Ubuntu-linux
 <!-- more -->
 
 ## Ubuntu系统问题
+
+### 删除显示为deinstall的linux内核
+
+```
+uname -a  
+dpkg --get-selections|grep linux  
+sudo dpkg -P linux-image-3.5.0-4[2-9]-generic  
+sudo dpkg -P linux-image-3.5.0-51-generic 
+```
+
+### 嵌入式上的wifi网络
+
+```
+sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
+```
+
+添加
+
+```
+network={
+    ssid="The_ESSID_from_earlier"
+    psk="Your_wifi_password"
+}
+```
+
+重启接口
+```
+sudo ifup wlan0
+```
+
+### 嵌入式上如何启动图形界面
+
+在shell中输入：`startx` 或者 `init 5`
+
+
+为了在Linux启动时直接进入Console界面，我们可以编辑/etc/inittab文件。找到id:5: initdefault:这一行，将它改为id:3:initdefault:后重新启动系统即可。我们看到，简简单单地将5改为3，就能实现启动时进入X-window图形操作界面或Console字符界面的转换，这是因为Linux操作系统有六种不同的运行级(run level)，在不同的运行级下，系统有着不同的状态，这六种运行级分别为：
+0：停机(记住不要把initdefault 设置为0，因为这样会使Linux无法启动 )
+1：单用户模式，就像Win9X下的安全模式。
+2：多用户，但是没有 NFS 。
+3：完全多用户模式，标准的运行级。
+4：一般不用，在一些特殊情况下可以用它来做一些事情。
+5：X11，即进到 X-window 系统。
+6：重新启动 (记住不要把initdefault 设置为6，因为这样会使Linux不断地重新启动)。
+
+
+### 旧版本ubuntu无法更新问题
+
+旧版本已经不再支持，需要换用old源：
+
+``` 
+deb http://old-releases.ubuntu.com/ubuntu/ raring main universe restricted multiverse
+deb-src http://old-releases.ubuntu.com/ubuntu/ raring main universe restricted multiverse
+
+deb http://old-releases.ubuntu.com/ubuntu/ raring-security main universe restricted multiverse
+deb-src http://old-releases.ubuntu.com/ubuntu/ raring-security main universe restricted multiverse
+
+deb http://old-releases.ubuntu.com/ubuntu/ raring-updates main universe restricted multiverse
+deb-src http://old-releases.ubuntu.com/ubuntu/ raring-updates main universe restricted multiverse
+
+deb http://old-releases.ubuntu.com/ubuntu/ raring-backports main restricted universe multiverse
+deb-src http://old-releases.ubuntu.com/ubuntu/ raring-backports main restricted universe multiverse
+
+deb http://old-releases.ubuntu.com/ubuntu/ raring-proposed main restricted universe multiverse
+deb-src http://old-releases.ubuntu.com/ubuntu/ raring-proposed main restricted universe multiverse
+```
+
+源文件的地址：
+
+> /etc/apt/sources.list
 
 ### 删除多余内核
 
@@ -136,6 +206,20 @@ x ------------1
 
 -----
 
+## grub2手动引导命令
+
+```
+grub rescue> ls  //查看分区
+grub rescue> ls (hd0,gpt8) //寻找根分区
+grub rescue> set
+grub rescue> set  prefix=(hd0,gpt8)/boot/grub
+grub rescue> set  root=hd0,gpt8
+grub rescue> insmod normal
+grub rescue> normal
+
+```
+
+---
 ## Gnome3问题
 
 -----
@@ -190,6 +274,17 @@ env | grep fcitx
 -----
 
 ## Ubuntu工具收集
+
+### Boot-repair
+
+修复双系统引导
+
+```
+sudo -i
+add-apt-repository ppa:yannubuntu/boot-repair && apt-get update
+apt-get install -y boot-repair && boot-repair
+```
+
 
 ### grub神器 GRUB Customizer
 

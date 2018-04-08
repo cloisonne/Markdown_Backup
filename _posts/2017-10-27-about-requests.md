@@ -6,6 +6,7 @@ tags:
   - Python
   - 爬虫
 permalink: about-requests
+abbrlink: 20316
 date: 2017-10-27 19:52:21
 ---
 

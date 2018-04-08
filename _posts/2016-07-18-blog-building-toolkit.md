@@ -1,6 +1,5 @@
-﻿---
+---
 title: 博客搭建过程和工具总结
-date: 2016-07-18 21:42:13
 categories:
   - Notes
 tags:
@@ -9,14 +8,47 @@ tags:
   - Markdown
   - Github
 permalink: blog-building-toolkit
-top: 1
+top: 99
+abbrlink: 17629
+date: 2016-07-18 21:42:13
 ---
-
 <h2 id="intro">前言</h2>长期记录，很多东西都是边学边做，要培养自己规范记录的习惯。
 
 还不怎么熟悉图床和图链的使用，暂时就用文字叙述，主要还是给自己看。
 
 <!-- more -->
+## 2018.3.8更新
+
+- 加入了插件[hexo-abbrlink](https://github.com/rozbo/hexo-abbrlink/) 目前文章ID为随机数，解决了gitment laber不够短的问题
+
+---
+## 2018.3.7更新
+
+- 修改了gitment生成ID的方式，参考[添加Gitment评论系统踩过的坑](http://xichen.pub/2018/01/31/2018-01-31-gitment/)
+- 增加了插件hexo-admin，踩坑，删除nodejs插件目录后重装恢复，增加了hexo编辑文档的方式
+		cnpm install
+
+---
+## 2018.1.23更新
+
+- 用python写了gitment自动初始化工具
+
+---
+## 2018.1.22更新
+
+- 加入了[gitment](https://github.com/imsun/gitment/)评论，修改了gitment的css样式，匹配了我的blog
+- 在留言板中也加入了gitment
+
+---
+
+## 2018.1.17更新
+
+- 新建了一个wordpress小站[我的文字小站](https://ykk.000webhostapp.com/)，托管在三蛋空间
+- 之前换了友言评论，差强人意，有时间换成gitment
+- 修改主站，增加了跳转链接<http://ykksmile.top/writing>,并修改了博客左边栏适配
+- 考虑要不要自己新开一个主题，原作者不更新了，我还有足够的精力吗？
+
+---
 
 ## 博客搭建过程
 

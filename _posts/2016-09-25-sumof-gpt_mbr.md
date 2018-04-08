@@ -4,8 +4,9 @@ categories:
   - Notes
 tags:
   - System
-date: 2016-09-25 21:20:04
 permalink: sumof_gpt_mbr
+abbrlink: 23569
+date: 2016-09-25 21:20:04
 ---
 
 <h2 id="intro">前言</h2>日前给一妹子装Ubuntu，几多波折，最主要的就是一开始没有意识到GPT+uefi的模式。

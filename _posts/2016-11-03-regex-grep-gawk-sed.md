@@ -5,6 +5,7 @@ categories:
 tags:
   - Linux
 permalink: regex_grep_gawk_sed
+abbrlink: 61374
 date: 2016-11-03 11:16:11
 ---
 

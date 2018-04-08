@@ -6,6 +6,7 @@ tags:
   - Linux
   - Makefile
 permalink: about-makefile
+abbrlink: 30483
 date: 2017-02-12 22:48:44
 ---
 
@@ -15,6 +16,8 @@ date: 2017-02-12 22:48:44
 <!-- more -->
 
 ---------------
+
+学习参考<http://www.cnblogs.com/OpenShiFt/p/4313351.html/>
 
 `makefile`
 

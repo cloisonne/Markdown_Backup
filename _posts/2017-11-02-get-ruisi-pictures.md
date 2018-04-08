@@ -1,11 +1,12 @@
 ---
 title: 睿思图片爬取实战（附代码）
 categories:
-  - Code
+  - Codes
 tags:
   - Python
   - 爬虫
 permalink: get-ruisi-pictures
+abbrlink: 25357
 date: 2017-11-02 15:24:46
 ---
 

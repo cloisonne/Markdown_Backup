@@ -1,10 +1,11 @@
 ---
 title: 百万英雄答题辅助(记一次成功的pull request)
 categories:
-  - null
+  - Codes
 tags:
-  - null
+  - Python
 permalink: auto-million-heroes
+abbrlink: 18682
 date: 2018-01-12 15:36:29
 ---
 
@@ -233,7 +234,7 @@ while(1):
 
 	git checkout -b name
 	
-1. 修改commit
+1. 修改commit 并push到新分支
 
 1. 发起PR  "New pull requests"
 

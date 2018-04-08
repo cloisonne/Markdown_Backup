@@ -1,14 +1,13 @@
 ---
 title: 我为什么要建这样一个blog
-date: 2016-05-23 21:28:22
-
 categories:
   - Essays
 tags:
   - 扯淡
   - Markdown
-
 permalink: the-meaning-of-this-blog
+abbrlink: 41162
+date: 2016-05-23 21:28:22
 ---
 
 

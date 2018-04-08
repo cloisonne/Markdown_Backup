@@ -6,6 +6,7 @@ tags:
   - 算法
   - Java
 permalink: reservoir-sampling
+abbrlink: 62400
 date: 2018-01-04 21:44:51
 ---
 

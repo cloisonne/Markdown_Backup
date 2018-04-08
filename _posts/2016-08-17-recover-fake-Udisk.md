@@ -5,8 +5,9 @@ categories:
 tags:
   - U-disk
   - storage
-date: 2016-08-17 11:12:21
 permalink: recover-fake-Udisk
+abbrlink: 11561
+date: 2016-08-17 11:12:21
 ---
 
 <h2 id="intro">前言</h2>家中找到了一个假的金士顿扩容盘，表面容量是32G，实际只有8G，最关键的是存储资料常常丢失。原本恢复很简单，量产即可，但该盘主控不可识别，比较麻烦。

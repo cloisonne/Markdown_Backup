@@ -4,8 +4,9 @@ categories:
   - Essays
 tags:
   - 扯淡
-date: 2016-10-02 11:57:59
 permalink: about-the-national-day
+abbrlink: 50234
+date: 2016-10-02 11:57:59
 ---
 
 <h2 id="intro">前言</h2>国庆节假期到了，身边的人大多都回家或者选择出去旅游了，而我还是默默地在实验室学习，写一点东西，聊以慰藉。

@@ -1,5 +1,5 @@
 ---
-title: 记录962项目的零碎
+title: 记录蜂窝网络链路聚合项目的零碎
 categories:
   - Notes
 tags:
@@ -7,7 +7,8 @@ tags:
   - GSM
   - VPN
   - IPsec
-permalink: about-962-project
+permalink: SIM-multi-aggregation-project
+abbrlink: 50343
 date: 2016-10-11 22:22:34
 ---
 
@@ -95,8 +96,23 @@ The roadwarriors carol and dave set up a connection each to the virtual gateway 
 ---------------
 ### SIM7100拨号脚本
 
+#### 代码
+详见gayhub：
+
+<div class="github-widget" data-repo="cloisonne/SIM7100-dial-script"></div>
+
+#### 上网设置APN,拨号号码，帐号和密码
+
+|运营商（ISP）|APN|拨号号码|帐号|密码|
+|----|----|----|----|----|
+|中国联通WCDMA（China Unicom）|3GNET|*99#|空|空|
+|中国电信CDMA2000（China Telecom）EVDO网络|空|#777|ctnet@mycdma.cn|vnet.mobi|
+|1X网络|空|#777|card (CARD)|card（CARD）|
+|中国移动 TD-SCDMA（China Mobile）|CMNET|*98*1#|空|空|
+|中国移动 GPRS（China Mobile）|CMNET|*99***1#|空|空|
 ---------------
 
 ### OpenSwan源码解析
 
+后面没有使用开源VPN，这里没有继续接触。
 

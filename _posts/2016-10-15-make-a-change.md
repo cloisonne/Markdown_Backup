@@ -6,6 +6,7 @@ tags:
   - Hexo
   - 扯淡
 permalink: make-a-change
+abbrlink: 59760
 date: 2016-10-15 20:43:22
 ---
 

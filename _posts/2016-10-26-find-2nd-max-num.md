@@ -5,6 +5,7 @@ categories:
 tags:
   - 算法
 permalink: find-2nd-max-num
+abbrlink: 59684
 date: 2016-10-26 20:26:38
 ---
 

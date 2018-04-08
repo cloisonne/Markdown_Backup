@@ -1,11 +1,12 @@
 ---
 title: Python爬虫总结（附拉勾网多进程代理池爬虫）
 categories:
-  - Code
+  - Codes
 tags:
   - 爬虫
   - Python
 permalink: sumof-crawler
+abbrlink: 28976
 date: 2017-11-11 14:14:19
 ---
 
